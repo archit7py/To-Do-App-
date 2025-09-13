@@ -1,0 +1,381 @@
+/* ===========================================
+   MERGED CSS FILE - All Styles Combined
+   =========================================== */
+
+/* ===== BASE STYLES ===== */
+body {
+    background: linear-gradient(to bottom, #000000);
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+
+/* ===== NAVBAR STYLES ===== */
+.navbar {
+    background: linear-gradient(#000000, #000000) !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .navbar-text,
+.navbar .btn-link {
+    color: #2bff0a !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #40ee06 !important;
+}
+
+.navbar .navbar-toggler {
+    border-color: #50f205;
+}
+
+/* Make the toggler icon visible on dark background */
+.navbar .navbar-toggler-icon {
+    filter: invert(82%) sepia(63%) saturate(707%) hue-rotate(8deg) brightness(103%) contrast(104%);
+}
+
+/* ===== TYPOGRAPHY ===== */
+h2 {
+    color: #19f405;
+}
+
+/* Update page specific h2 color */
+.update-mode h2 {
+    color: #f59e0b;
+}
+
+.mb-3 {
+    color: #41ee08;
+    margin-bottom: 1.25rem !important;
+}
+
+.title-center {
+    text-align: center;
+}
+
+/* ===== FORM CONTROLS ===== */
+.form-control,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+select,
+textarea {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #e6ffe0;
+    border: 2px solid #2f02f5;
+    border-radius: 16px;
+    padding: 10px 14px;
+    line-height: 1.4;
+    outline: none;
+    box-shadow: none;
+    transition: background-color .2s ease, border-color .2s ease, box-shadow .2s ease, color .2s ease;
+}
+
+.form-control::placeholder,
+input::placeholder,
+textarea::placeholder {
+    color: #9fdc97;
+    opacity: 1;
+}
+
+.form-control:hover,
+input:hover,
+select:hover,
+textarea:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: #40ee06;
+}
+
+.form-control:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    background-color: rgba(255, 255, 255, 0.16);
+    border-color: #06eeb4;
+    box-shadow: 0 0 0 3px rgba(6, 238, 180, 0.25);
+    color: #ffffff;
+}
+
+.form-control:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #b7b7b7;
+    border-color: #5a5a5a;
+    cursor: not-allowed;
+}
+
+/* Valid/invalid states */
+.form-control.is-valid,
+input.is-valid,
+select.is-valid,
+textarea.is-valid {
+    border-color: #16c60c;
+    box-shadow: 0 0 0 3px rgba(22, 198, 12, 0.25);
+}
+
+.form-control.is-invalid,
+input.is-invalid,
+select.is-invalid,
+textarea.is-invalid {
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.25);
+}
+
+/* ===== CHECKBOXES AND RADIOS ===== */
+.form-check-input {
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 6px;
+    border: 2px solid #2f02f5;
+    background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: none;
+    outline: none;
+    transition: background-color .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.form-check-input:hover {
+    border-color: #40ee06;
+}
+
+.form-check-input:focus {
+    border-color: #06eeb4;
+    box-shadow: 0 0 0 3px rgba(6, 238, 180, 0.25);
+}
+
+.form-check-input:checked {
+    background-color: #29f106;
+    border-color: #29f106;
+}
+
+.form-check-label {
+    color: #c8ffbf;
+}
+
+.mb-3 .form-check {
+    color: #2dfb08;
+}
+
+.mb-3 .form-check:hover {
+    color: #f0e107;
+}
+
+.mb-3 .form-check:focus {
+    color: #fbfb08;
+}
+
+.form-check-label:hover {
+    color: #f0e107;
+}
+
+.form-check-label:focus {
+    color: #fbfb08;
+}
+
+/* ===== SELECT DROPDOWN ===== */
+select {
+    background-image: linear-gradient(45deg, transparent 50%, #29f106 50%),
+                      linear-gradient(135deg, #29f106 50%, transparent 50%),
+                      linear-gradient(to right, transparent, transparent);
+    background-position: calc(100% - 20px) calc(1em + 2px),
+                         calc(100% - 15px) calc(1em + 2px),
+                         100% 0;
+    background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+    background-repeat: no-repeat;
+    padding-right: 2.5em;
+}
+
+/* ===== TEXTAREA ===== */
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* ===== BUTTONS ===== */
+.btn-warning {
+    background-color: #29f106;
+    border-color: #3eff09;
+    color: #000000;
+    border-width: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.btn-warning:hover {
+    background-color: #06eeb4;
+    border-color: #2f02f5;
+    border-radius: 80px;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    color: #000000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Update page specific btn-warning */
+.update-mode .btn-warning {
+    background-color: #eef1f0;
+    border-color: #fcfcfc;
+    color: #0b0f19;
+}
+
+.normal-btn {
+    color: #31fe08;
+    background-color: #000000;
+    border-color: #1ef502;
+    border-width: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.normal-btn:hover {
+    color: #000000;
+    background-color: #2eff04;
+    border-color: #ffffff;
+    transform: translateY(-1px);
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ===== TODO BUTTONS ===== */
+.todo-btn {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 24px;
+    border: 3px solid #000000;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all .25s ease-in-out;
+}
+
+.todo-btn:hover {
+    background-color: #06eeb4;
+    transform: translateY(-1px);
+    text-shadow: #f20707;
+}
+
+.update-btn {
+    background-color: #94f559;
+    color: #000000;
+    border-width: 3px;
+    border-radius: 800px;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.update-btn:hover {
+    background-color: #30fd02;
+    transform: translateY(-1px);
+    color: #000000;
+}
+
+.delete-btn {
+    background-color: #ef5f5f;
+    color: #000000;
+    border-width: 3px;
+    border-radius: 800px;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.delete-btn:hover {
+    background-color: #f20707;
+    transform: translateY(-1px);
+    color: #ffffff;
+}
+
+/* ===== TABLE STYLES ===== */
+.table {
+    color: #ffffff;
+    border-width: 3px;
+    border-radius: 800px;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* ===== CONTAINER STYLES ===== */
+.container-fluid {
+    color: #ffffff;
+    border-width: 3px;
+    border-radius: 800px;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* ===== FORM ARC ===== */
+.form-arc {
+    color: #000000;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 15px;
+    }
+    
+    .todo-btn {
+        padding: 4px 10px;
+        font-size: 0.9rem;
+    }
+    
+    .table {
+        font-size: 0.9rem;
+    }
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.text-center {
+    text-align: center;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.mb-3 {
+    margin-bottom: 1.25rem;
+}
+
+.p-3 {
+    padding: 1rem;
+}
