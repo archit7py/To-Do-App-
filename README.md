@@ -1,7 +1,7 @@
 📝 To-Do App (Flask)
 
 A simple and lightweight To-Do List web application built with the Flask framework (Python).
-This app allows users to add, update, and delete tasks, making it a great starting point for learning Flask CRUD operations.
+This app allows users to add, update, and delete tasks, making it a great starting point for learning Flask CRUD operations....
 
 🚀 Features
 
